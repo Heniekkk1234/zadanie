@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Dołączenia do Drużyny Sportowej</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #00FFFF; /* Tło ustawione na cyjan */
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+        }
+        form {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .input-group {
+            margin-bottom: 30px; /* Zwiększenie przestrzeni między pytaniami */
+        }
+        .input-group input, .input-group select, .input-group textarea {
+            width: 100%;
+        }
+        .input-group textarea {
+            height: 120px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 50px; /* Większa przestrzeń między odpowiedziami poziomymi */
+        }
+        .checkbox-group {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .input-group.radio-group, .input-group.checkbox-group {
+            margin-left: 20px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group.right-align {
+            grid-column: 2;
+        }
+        .input-group.left-align {
+            grid-column: 1;
+        }
+        .input-group.horizontal {
+            display: flex;
+            flex-direction: row;
+        }
+        .input-group.vertical {
+            display: flex;
+            flex-direction: column;
+        }
+        .submit-buttons input {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Formularz Dołączenia do Drużyny Sportowej</h1>
+    <form action="#" method="POST">
+        
+        <div class="input-group left-align">
+            <label for="name">1. Imię i nazwisko:</label>
+           <input type="text" id="goals" name="goals">
+        </div>
+
+        <!-- Pytanie 2 (Wiek) - ułożenie poziome -->
+        <div class="input-group horizontal">
+            <label>2. Wiek:</label>
+            <label><input type="radio" name="age" value="13"> 13</label>
+            <label><input type="radio" name="age" value="14"> 14</label>
+            <label><input type="radio" name="age" value="15"> 15</label>
+            <label><input type="radio" name="age" value="16+"> 16+</label>
+        </div>
+
+        <!-- Pytanie 3 (Jaki sport chcesz uprawiać?) - ułożenie pionowe -->
+        <div class="input-group vertical">
+            <label>3. Jaki sport chcesz uprawiać?</label>
+            <label><input type="radio" name="sport" value="piłka nożna"> Piłka nożna</label>
+            <label><input type="radio" name="sport" value="koszykówka"> Koszykówka</label>
+            <label><input type="radio" name="sport" value="siatkówka"> Siatkówka</label>
+        </div>
+
+        <!-- Pytanie 4 (Czy masz dobrą kondycję?) - ułożenie poziome -->
+        <div class="input-group horizontal">
+            <label>4. Czy masz dobrą kondycję?</label>
+            <label><input type="radio" name="fitness" value="tak"> Tak</label> &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp   
+            <label><input type="radio" name="fitness" value="chyba tak"> Chyba tak</label>  &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp  
+            <label><input type="radio" name="fitness" value="nie wiem"> Nie wiem</label> &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="radio" name="fitness" value="chyba nie"> Chyba nie</label>&nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp &nbsp
+            <label><input type="radio" name="fitness" value="nie"> Nie</label>
+        </div>
+
+        <!-- Pytanie 5 (W jakie dni preferujesz treningi?) - ułożenie poziome -->
+        <div class="input-group horizontal">
+            <label>5. W jakie dni preferujesz treningi?</label>
+            <label><input type="checkbox" name="training-days" value="poniedziałek" checked> Poniedziałek</label> &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="checkbox" name="training-days" value="wtorek"> Wtorek</label> &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="checkbox" name="training-days" value="środa"> Środa</label> &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="checkbox" name="training-days" value="czwartek"> Czwartek</label> &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="checkbox" name="training-days" value="piątek"> Piątek</label> &nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+        </div>
+
+        <!-- Pytanie 6 (W jakich godzinach preferujesz treningi?) - ułożenie pionowe -->
+        <div class="input-group vertical">
+            <label>6. W jakich godzinach preferujesz treningi?</label>
+            <label><input type="checkbox" name="training-hours" value="poranne"> Poranne</label>
+            <label><input type="checkbox" name="training-hours" value="popołudniowe"> Popołudniowe</label>
+            <label><input type="checkbox" name="training-hours" value="wieczorne"> Wieczorne</label>
+        </div>
+
+        <!-- Pytanie 7 (Poziom zaawansowania) - ułożenie poziome -->
+        <div class="input-group horizontal">
+            <label>7. Poziom zaawansowania:</label>
+            <label><input type="checkbox" name="skill-level" value="początkujący"> Początkujący</label>&nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="checkbox" name="skill-level" value="nowicjusz"> Nowicjusz</label>&nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="checkbox" name="skill-level" value="zaawansowany"> Zaawansowany</label>&nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+            <label><input type="checkbox" name="skill-level" value="bardzo zaawansowany"> Bardzo zaawansowany</label>&nbsp &nbsp  &nbsp  &nbsp  &nbsp &nbsp &nbsp
+        </div>
+
+        <div class="input-group left-align">
+            <label for="email">8. Adres e-mail:</label>
+            <input type="email" id="email" name="email" placeholder="potrzebny do kontaktu">
+        </div>
+
+        <div class="input-group right-align">
+            <label for="city">9. Miasto:</label>
+            <input type="text" id="city" name="city">
+        </div>
+
+        <div class="input-group left-align">
+            <label for="login">10. Login:</label>
+            <input type="text" id="login" name="login">
+        </div>
+
+        <div class="input-group right-align">
+            <label for="password">11. Hasło:</label>
+            <input type="password" id="password" name="password">
+        </div>
+
+        <div class="input-group left-align">
+            <label for="goals">12. Jakie masz cele? (max 100 znaków):</label>
+            <textarea id="name" name="name" rows="4" cols="50" maxlength="100"></textarea>
+        </div>
+
+        <div class="input-group right-align">
+            <label for="league">13. Czy chciałbyś brać udział w rozgrywkach ligowych?</label>
+            <select name="league" id="league">
+                <option value="tak">Tak</option>
+                <option value="raczej tak">Raczej tak</option>
+                <option value="może">Może</option>
+                <option value="raczej nie">Raczej nie</option>
+                <option value="nie">Nie</option>
+            </select>
+        </div>
+
+        <div class="input-group left-align">
+            <label for="training-seasons">14. Czy jesteś gotów brać udział w treningach w każdą porę roku?</label>
+            <select name="training-seasons" id="training-seasons">
+                <option value="tak">Tak</option>
+                <option value="raczej tak">Raczej tak</option>
+                <option value="raczej nie">Raczej nie</option>
+                <option value="nie">Nie</option>
+            </select>
+        </div>
+
+        <div class="input-group right-align">
+            <label for="equipment">15. Czy masz sprzęt sportowy?</label>
+            <select name="equipment" id="equipment">
+                <option value="tak">Tak</option>
+                <option value="nie">Nie</option>
+                <option value="w najbliższym czasie zakupie">W najbliższym czasie zakupie</option>
+            </select>
+        </div>
+
+        <div class="submit-buttons">
+            <input type="reset" value="Czyść">
+            <input type="submit" value="Wyślij">
+        </div>
+        
+<A HREF="index.html"> <h1> wróć </h1> </A>
+    </form>
+
+</body>
+</html>

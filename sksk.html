@@ -1,133 +1,76 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html>
 <head>
-    <meta charset="utf-8">
-    <title>henryk piszczek</title>
-    <style>
-        body {
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-            color: #555;
-        }
-        .link {
-            color: #0066cc;
-            text-decoration: none;
-        }
-        .link:hover {
-            text-decoration: underline;
-        }
-        .highlight {
-            color: #e74c3c;
-            font-size: 1.5em;
-        }
-        .info {
-            font-size: 1.2em;
-            color: #27ae60;
-        }
-        .right {
-            text-align: right;
-            color: #2980b9;
-        }
-        .center {
-            text-align: center;
-        }
-        .fieldset {
-            border: 2px solid #bdc3c7;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        hr {
-            border: none;
-            height: 2px;
-            background-color: #95a5a6;
-        }
-    </style>
+ <meta charset="utf-8">
+ <!-- Dodajemy tag link do ikony strony (favicon) -->
+ <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+<html>
+ <head>
+ <meta charset="utf-8">
 
-<h1 id="top">henryk piszczek</h1>
-<p>
-    <a class="link" href="poczta_piszczek.html">Link do poczty</a><br>
-    <a class="link" href="plik_piszczek.html">Link do pliku</a><br>
-    <a class="link" href="#middle">Skocz do środka tekstu</a><br>
-    <a class="link" href="#bottom">Skocz na dół tekstu</a><br>
-    <a class="link" href="tabela_piszczek.html">Link do tabeli</a><br>
-    <a class="link" href="formularz_piszczek.html">Link do formularza</a><br>
-</p>
+ </head>
+<body>
+ <table width=65% border="1" align="center">
+ <tr>
+ <td colspan="3">
 
-<h2 class="highlight">Walidacja stron HTML</h2>
-<p class="info">
-    Proces sprawdzania poprawności kodu HTML, aby upewnić się, że spełnia standardy i nie zawiera błędów takich jak brakujące tagi lub niepoprawne atrybuty.
-</p>
+<iframe scrolling="no" width=1000 height=100 name="obszar_logo" src="logo_skierka.html" border="0"></iframe>
+ </td>
 
-<h2 class="highlight">Walidator</h2>
-<p class="info">
-    Narzędzie służące do automatycznego sprawdzania zgodności kodu HTML, CSS czy innych technologii z obowiązującymi standardami.
-</p>
+  <tr>
+<td width=18% align="center">
+ <b>lewe menu</b>
+ <ul>
+ <li>
+ <a href="https://zse.edu.gdansk.pl/" target="obszar_glowny">Strona ZSE</a>
+ </li>
+ <li>
+ <a href="https://www.kuratorium.gda.pl/" target="obszar_glowny">Kuratorium</a>
+ </li>
+<li>
+ <a href="https://cms-panel.edu.gdansk.pl/Content/pub/458/Plan_lekcji/plan2018/index.html" target="obszar_glowny">Plan lekcji zse </a>
+ </li>
+<li>
+ <a href="https://www.euro.com.pl/?utm_source=2001310%7Cportal.opera.com&utm_medium=TradeDoubler&utm_campaign=(TradeDoubler)&utm_content=%2F" target="obszar_glowny">Strona RTV EURO AGD</a>
+ </li>
+ </ul>
+ </td> </td>
 
-<p class="center">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 Logo" width="200" height="200">
-</p>
+ 
+<td align=center>
+ <iframe width=650 height=420 name="obszar_glowny" src="glowny_skierka.html" border="0"></iframe>
+ 
+ </td>
 
-<h2 id="middle">henryk piszczek</h2>
-<p class="right">henryk piszczek</p>
-<p class="right">Ulubiony aktor: Robert Lewandowski</p>
-<p class="center">
-    Ulubiony zespół muzyczny: <span class="highlight">ACDC</span>
-</p>
 
-<hr>
+</td>
+<td width=50% align="center">
+ <center> <b>prawe menu</b> <center>
 
-<h2 class="center">Żarty</h2>
-<div class="fieldset">
-    <legend>Baba u lekarza</legend>
-    Przychodzi baba do lekarza, a lekarz też baba.
-    <img src="https://th.bing.com/th/id/R.e421b711ac1bd49762db8c63e63c290e" alt="Doktor" width="120" height="120" style="float:left; margin:10px;">
-    <img src="https://png.pngtree.com/element_our/png_detail/20181122/background-of-cartoon-doctor-characters-png_234076.jpg" alt="Doktor" width="120" height="120" style="float:right; margin:10px;">
-</div>
+<map id="mapa_skierka">
+ <area shape="rect" coords="0,0,100,50" href="plik_skierka.html" target="obszar_glowny">
+ <area shape="poly" coords="50,50,90,100,10,100" href="tabela_skierka.html" target="obszar_glowny">
+<area shape="circle" coords="50,150,25" href="formularz_skierka.html" target="obszar_glowny">
+  <area shape="rect" coords="10,200,90,250" href="poczta_skierka.html" target="obszar_glowny">
+  <area shape="circle" coords="50,275,25" href="index.html" target="obszar_glowny">
+ 
+</map>
+ <img src="mapa.gif" alt="tutaj wybieraj linki" usemap="#mapa_skierka">
+ 
 
-<hr>
+ <tr>
+ <td colspan="3">
+ 
+<iframe scrolling="no" width=1000 height=450 name="obszar_stopka" src="stopka_skierka.html" border="0"></iframe>
 
-<div class="fieldset">
-    <legend>Przyszły informatyk</legend>
-    Dzieci piszą wypracowanie o tym, jak wyobrażają sobie pracę informatyka. Karol nie pisze.<br>
-    - Dlaczego nie piszesz? - pyta nauczycielka.<br>
-    - Czekam, aż mi się otworzy edytor tekstu.
-    <img src="https://thumbs.dreamstime.com/b/leuke-computer-5814716.jpg" alt="Komputer" width="120" height="120" style="float:right; margin:10px;">
-</div>
+</td>
 
-<hr>
+ </td>
+ </tr>
+ </table>
 
-<div class="fieldset">
-    <legend>Dentysta sadysta</legend>
-    - Panie doktorze, czy ma pan coś na moje zęby?<br>
-    - Tak, woreczki...
-    <img src="https://st.depositphotos.com/1526816/1390/v/450/depositphotos_13900188-stock-illustration-a-tooth.jpg" alt="Ząb" width="120" height="120" style="float:left; margin:10px;">
-</div>
-
-<hr>
-
-<h2 id="bottom">Przydatne skróty klawiszowe</h2>
-<ul>
-    <li>Windows + L: Blokowanie komputera</li>
-    <li>Windows + D: Wyświetlanie pulpitu</li>
-    <li>Windows + PrtSc: Zrzut ekranu</li>
-</ul>
-
-<h2>Różne złącza i ich prędkości</h2>
-<ol>
-    <li>USB 4v2: 80 Gb/s</li>
-    <li>USB 4.0: 40 Gb/s</li>
-    <li>Thunderbolt 3: 40 Gb/s</li>
-</ol>
-
-<p><a class="link" href="#top">Powrót na górę</a></p>
 
 </body>
 </html>
